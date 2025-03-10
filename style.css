@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(85, 85, 85);
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  scale: 1.5;
+  overflow: hidden;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.blinking-cursor {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 2px;
+  height: 1em;
+  background-color: rgba(0, 0, 0, 0.541);
+  animation: blink 1s step-end infinite;
+  transform: translateY(-60%);
+}
+div {
+  background-color: rgba(0, 0, 0, 0.712);
+  border-radius: 10px;
+  border: #33333353 solid 6px;
+}
+div button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  width: 40px;
+  margin: 1px;
+  margin-top: 2px;
+  background-color: rgba(234, 165, 17, 0.658);
+  border: 1px rgba(237, 18, 18, 0.87);
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(172, 172, 172);
+  -webkit-text-stroke: 0.6px rgba(6, 6, 6, 0.678);
+}
+#calc {
+  background-color: rgba(88, 88, 88, 0.74);
+}
+#clear {
+  background-color: rgba(237, 18, 18, 0.658);
+}
+div button:active {
+  transform: scale(0.95);
+  background-color: rgba(212, 212, 212, 0.5);
+}
+
+div input {
+  margin-bottom: 5px;
+  width: 216px;
+  height: 60px;
+  font-size: 20px;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #33333300;
+  background-color: rgba(245, 245, 220, 0.486);
+}
+div h6 {
+  font-size: 13px;
+  color: lightblue;
+  mix-blend-mode: multiply;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: rgba(51, 51, 51, 0);
+  position: absolute;
+  bottom: 27.5%;
+  left: 49%;
+}
+
+.div a {
+  text-decoration: none;
+}
+#github {
+  mix-blend-mode: multiply;
+  position: absolute;
+  display: flex;
+  width: 30px;
+  padding: 7px;
+  bottom: 26.8%;
+  left: 56.4%;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    scale: 1.5;
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
