@@ -74,6 +74,7 @@ div input {
   border-radius: 5px;
   border: 1px solid #33333300;
   background-color: rgba(245, 245, 220, 0.486);
+  -webkit-text-stroke: 0.6px black;
 }
 div h6 {
   font-size: 13px;
