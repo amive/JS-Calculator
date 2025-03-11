@@ -106,6 +106,17 @@ div h6 {
     align-items: center;
     height: 100vh;
     scale: 1.5;
+    overflow: hidden;
+  }
+  div h6 {
+    position: absolute;
+    bottom: 18%;
+    left: 36%;
+  }
+  div a {
+    position: absolute;
+    bottom: 17.6%;
+    left: 59%;
   }
 }
 
